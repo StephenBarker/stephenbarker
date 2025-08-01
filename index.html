@@ -134,50 +134,63 @@
     </div>
   </div>
 
-  <script>
-    // Typing Effect for Boot
-    const bootLines = [
-      "Initializing...",
-      "> SYSTEM CHECK: PASSED ✅",
-      "> CPU CYCLES ENGAGED ⚡",
-      "> AI MODULE: STEPHEN BARKER ONLINE 🧠",
-      "> LOCATING BEST PROGRAMMER IN CLAY COUNTY...",
-      "> MATCH FOUND ✅",
-      "> LAUNCHING VISUAL INTERFACE..."
-    ];
+ <script>
+  // Typing Effect for Boot
+  const bootLines = [
+    "Initializing...",
+    "> SYSTEM CHECK: PASSED ✅",
+    "> CPU CYCLES ENGAGED ⚡",
+    "> AI MODULE: STEPHEN BARKER ONLINE 🧠",
+    "> LOCATING BEST PROGRAMMER IN CLAY COUNTY...",
+    "> MATCH FOUND ✅",
+    "> LAUNCHING VISUAL INTERFACE..."
+  ];
 
-    const bootElement = document.getElementById("boot");
-    let lineIndex = 0;
+  const bootElement = document.getElementById("boot");
+  const mainContent = document.getElementById("main-content");
+  let lineIndex = 0;
 
-    function typeNextLine() {
-      if (lineIndex >= bootLines.length) return;
-      const line = bootLines[lineIndex];
-      let charIndex = 0;
-      const interval = setInterval(() => {
-        bootElement.innerHTML += line[charIndex++];
-        if (charIndex === line.length) {
-          clearInterval(interval);
-          bootElement.innerHTML += '\n';
-          lineIndex++;
-          setTimeout(typeNextLine, 300);
-        }
-      }, 40);
+  function fadeOutBoot() {
+    bootElement.style.transition = "opacity 2s ease-out";
+    bootElement.style.opacity = "0";
+    setTimeout(() => {
+      bootElement.style.display = "none";
+      mainContent.style.opacity = "1"; // In case CSS animation didn't fire
+    }, 2000);
+  }
+
+  function typeNextLine() {
+    if (lineIndex >= bootLines.length) {
+      setTimeout(fadeOutBoot, 800); // Delay before fading out
+      return;
     }
-
-    typeNextLine();
-
-    // Fetch Corporate BS
-    async function fetchBS() {
-      try {
-        const res = await fetch("https://corporatebs-generator.sameerkumar.website/");
-        const data = await res.json();
-        document.getElementById("bs-text").textContent = "💼 " + data.phrase;
-      } catch (err) {
-        document.getElementById("bs-text").textContent = "📡 Failed to generate buzzwords. Real talk mode enabled.";
+    const line = bootLines[lineIndex];
+    let charIndex = 0;
+    const interval = setInterval(() => {
+      bootElement.innerHTML += line[charIndex++];
+      if (charIndex === line.length) {
+        clearInterval(interval);
+        bootElement.innerHTML += '\n';
+        lineIndex++;
+        setTimeout(typeNextLine, 300);
       }
-    }
+    }, 40);
+  }
 
-    setTimeout(fetchBS, 6500); // After boot finishes
-  </script>
+  typeNextLine();
+
+  // Fetch Corporate BS
+  async function fetchBS() {
+    try {
+      const res = await fetch("https://corporatebs-generator.sameerkumar.website/");
+      const data = await res.json();
+      document.getElementById("bs-text").textContent = "💼 " + data.phrase;
+    } catch (err) {
+      document.getElementById("bs-text").textContent = "📡 Failed to generate buzzwords. Real talk mode enabled.";
+    }
+  }
+
+  setTimeout(fetchBS, 7500); // Call after boot finishes
+</script>
 </body>
 </html>
