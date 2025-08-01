@@ -2,22 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Stephen Barker – Cyberpunk Coder</title>
+  <title>Stephen Barker – Cyberpunk Uplink</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+      background: #000;
       color: #00ffcc;
       font-family: 'Share Tech Mono', monospace;
+      overflow: hidden;
+    }
+
+    #boot {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color: #00ffcc;
+      padding: 20px;
+      font-size: 1rem;
+      white-space: pre-line;
+      z-index: 10;
+    }
+
+    #main-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      overflow: hidden;
+      height: 100vh;
+      padding-top: 80px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in 6s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
 
     marquee {
@@ -29,13 +52,33 @@
       border-bottom: 2px solid #00ffcc;
     }
 
+    .photo-container {
+      position: relative;
+      margin-top: 40px;
+    }
+
     img {
       max-width: 90vw;
       max-height: 70vh;
       border: 4px double #00ffcc;
       box-shadow: 0 0 25px #ff00ff;
       border-radius: 6px;
-      margin-top: 40px;
+    }
+
+    .scanner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(0, 255, 204, 0.7);
+      animation: scan 4s infinite;
+      box-shadow: 0 0 8px #00ffcc;
+    }
+
+    @keyframes scan {
+      0% { top: 0; }
+      100% { top: 100%; }
     }
 
     .tagline {
@@ -43,18 +86,98 @@
       font-size: 1.4rem;
       color: #ff00ff;
       text-shadow: 0 0 6px #00ffcc;
+      animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: none; opacity: 1; }
+      20% { transform: translateX(-1px) skewX(-5deg); }
+      40% { transform: translateX(1px) skewX(5deg); opacity: 0.8; }
+      60% { transform: translateX(-2px) skewX(-3deg); }
+      80% { transform: translateX(2px) skewX(2deg); opacity: 0.9; }
+      100% { transform: none; opacity: 1; }
+    }
+
+    .bs-banner {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #111;
+      color: #00ffcc;
+      font-size: 1rem;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 2px dashed #ff00ff;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
-  <marquee behavior="scroll" direction="left">
-    ⚠️ SYSTEM OVERRIDE: Stephen Barker – 👨‍💻 Cyberpunk Coder – 🧠 Undisputed ⚡ Unhireable 💀 Unmatched 🛠️
-  </marquee>
 
-    <img src="76668045986__ECEF6A7B-9EAD-4065-8C80-F523EC358B7C.jpeg" alt="Stephen Barker – Cyberpunk Programmer">
+  <div id="boot"></div>
 
-  <div class="tagline">
-    🧬 <strong>System Online</strong> • Ego Verified ✅ • Code Deployed 🚀
+  <div id="main-content">
+    <marquee behavior="scroll" direction="left">
+      ⚠️ SYSTEM OVERRIDE: Stephen Barker – 👨‍💻 Cyberpunk Coder – 🧠 Undisputed ⚡ Unhireable 💀 Unmatched 🛠️
+    </marquee>
+
+    <div class="photo-container">
+      <div class="scanner"></div>
+      <img src="76668045986__ECEF6A7B-9EAD-4065-8C80-F523EC358B7C.jpeg" alt="Stephen Barker – Cyberpunk Programmer">
+    </div>
+
+    <div class="tagline">
+      🧬 SYSTEM ONLINE • EGO VERIFIED ✅ • CODE DEPLOYED 🚀
+    </div>
+
+    <div class="bs-banner" id="bs-text">
+      🤖 Generating synergistic frameworks...
+    </div>
   </div>
+
+  <script>
+    // Typing Effect for Boot
+    const bootLines = [
+      "Initializing...",
+      "> SYSTEM CHECK: PASSED ✅",
+      "> CPU CYCLES ENGAGED ⚡",
+      "> AI MODULE: STEPHEN BARKER ONLINE 🧠",
+      "> LOCATING BEST PROGRAMMER IN CLAY COUNTY...",
+      "> MATCH FOUND ✅",
+      "> LAUNCHING VISUAL INTERFACE..."
+    ];
+
+    const bootElement = document.getElementById("boot");
+    let lineIndex = 0;
+
+    function typeNextLine() {
+      if (lineIndex >= bootLines.length) return;
+      const line = bootLines[lineIndex];
+      let charIndex = 0;
+      const interval = setInterval(() => {
+        bootElement.innerHTML += line[charIndex++];
+        if (charIndex === line.length) {
+          clearInterval(interval);
+          bootElement.innerHTML += '\n';
+          lineIndex++;
+          setTimeout(typeNextLine, 300);
+        }
+      }, 40);
+    }
+
+    typeNextLine();
+
+    // Fetch Corporate BS
+    async function fetchBS() {
+      try {
+        const res = await fetch("https://corporatebs-generator.sameerkumar.website/");
+        const data = await res.json();
+        document.getElementById("bs-text").textContent = "💼 " + data.phrase;
+      } catch (err) {
+        document.getElementById("bs-text").textContent = "📡 Failed to generate buzzwords. Real talk mode enabled.";
+      }
+    }
+
+    setTimeout(fetchBS, 6500); // After boot finishes
+  </script>
 </body>
 </html>
