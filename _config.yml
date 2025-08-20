@@ -1,0 +1,21 @@
+title: "Stephen Barker"
+description: "Where code meets resistance."
+theme: minima
+baseurl: ""
+url: "https://stephenbarker.github.io"
+highlighter: rouge
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+nav:
+  - title: "Boot Sequence"
+    url: "/"
+  - title: "Legacy Code"
+    url: "/legacy-code.html"
+  - title: "Exploits"
+    url: "/exploits.html"
+  - title: "Black ICE"
+    url: "/black-ice.html"
