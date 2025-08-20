@@ -1,7 +1,7 @@
 title: "Stephen Barker"
 description: "Where code meets resistance."
 theme: minima
-baseurl: ""
+baseurl: "/stephenbarker" # <-- IMPORTANT: Replace with your GitHub repository name
 url: "https://stephenbarker.github.io"
 highlighter: rouge
 markdown: kramdown

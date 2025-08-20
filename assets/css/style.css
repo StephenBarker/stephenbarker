@@ -71,7 +71,7 @@ main {
     80% { text-shadow: 0 0 5px #FF00CC, 0 0 5px #00FFF7; }
     100% { text-shadow: 1px 0 #00FFF7, -1px 0 #FF00CC; }
 }
-.terminal-intro, .terminal-log {
+.terminal-intro, .terminal-log, .black-ice {
   background: rgba(0,0,0,0.95);
   border: 2px solid #FF00CC;
   padding: 2rem;

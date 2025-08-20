@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
     <div class="nav-center">
-       
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>{{ page.title }} | {{ site.title }}</title>
-      <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-      <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-     
-    <header>
-      <div class="nav-center">
-        <nav class="cyberpunk-nav">
-          <a href="/" class="cyberpunk-link">Boot Sequence</a>
-          <a href="/legacy-code.html" class="cyberpunk-link">Legacy Code</a>
-          <a href="/exploits.html" class="cyberpunk-link">Exploits</a>
-          <a href="/black-ice.html" class="cyberpunk-link">Black ICE</a>
-        </nav>
-      </div>
-      <marquee id="tagline" class="tagline glitch"></marquee>
-      <script>
-        fetch('https://corporatebs-generator.sameerkumar.website/')
-          .then(response => response.json())
-          .then(data => {
-            document.getElementById('tagline').textContent =
-              `Press Ctrl+Alt on the system to install: ${data.phrase}`;
-          })
-          .catch(() => {
-            document.getElementById('tagline').textContent =
-              'Press Ctrl+Alt on the system to install: [API unavailable]';
-          });
-      </script>
-    </header>
+      <nav class="cyberpunk-nav">
+        {% for item in site.nav %}
+        <a href="{{ item.url | relative_url }}" class="cyberpunk-link">{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+    <marquee id="tagline" class="tagline glitch"></marquee>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <script>
+    fetch('https://corporatebs-generator.sameerkumar.website/')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('tagline').textContent =
+          `Press Ctrl+Alt on the system to install: ${data.phrase}`;
+      })
+      .catch(() => {
+        document.getElementById('tagline').textContent =
+          'Press Ctrl+Alt on the system to install: [API unavailable]';
+      });
+  </script>
+</body>
+
+</html>
