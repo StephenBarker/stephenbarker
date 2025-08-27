@@ -1,0 +1,8 @@
+# get out of here nerds, it's a static site
+#
+# For any actual security researchers who stumble upon this:
+# See https://securitytxt.org/ for details.
+Contact: mailto:stephenleebarker@gmail.com
+
+# The policy will expire after the heat death of the universe.
+Expires: 9999-12-31T23:59:59.999Z
