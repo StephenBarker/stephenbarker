@@ -9,7 +9,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Tell Jekyll to include dotfiles/folders in the build
 include:
   - ".well-known"
 

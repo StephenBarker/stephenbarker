@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  display: flex;
+
   flex-direction: column;
   align-items: center;
 }
@@ -29,7 +29,6 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  flex: 1;
 }
 .cyberpunk-link {
   color: #FF00CC;
@@ -71,7 +70,7 @@ main {
     80% { text-shadow: 0 0 5px #FF00CC, 0 0 5px #00FFF7; }
     100% { text-shadow: 1px 0 #00FFF7, -1px 0 #FF00CC; }
 }
-.terminal-intro, .terminal-log, .black-ice {
+.terminal-intro, .terminal-log, .black-ice, .exploits-list {
   background: rgba(0,0,0,0.95);
   border: 2px solid #FF00CC;
   padding: 2rem;
@@ -83,6 +82,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.exploits-list {
+  max-width: 70%;
+  align-items: stretch; /* Make list items fill the width */
+}
+.exploits-list ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.exploits-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1em;
 }
 .typewriter {
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
@@ -104,4 +116,84 @@ main {
   font-family: 'Inter', sans-serif;
   font-size: 1.2em;
   margin-top: 1em;
+}
+.post-date {
+  color: #39FF14; /* crt-green */
+}
+.jargon-container {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.jargon-container pre {
+  color: #00FFF7;
+  font-size: 1.1em;
+}
+.legacy-entry,
+.legacy-entry-static {
+  margin-bottom: 0.5em;
+}
+.legacy-entry-static {
+  /* Style for non-expandable log entries */
+  color: #00FFF7;
+}
+.legacy-entry summary {
+  cursor: pointer;
+  outline: none;
+  color: #00FFF7;
+  transition: color 0.2s;
+}
+.legacy-entry summary:hover {
+  color: #FF00CC;
+}
+.legacy-entry[open] summary {
+  color: #39FF14; /* Green when open */
+}
+.entry-details {
+  color: #aaa; /* Dim the details text */
+  padding-left: 2em;
+  margin-top: 0.5em;
+  white-space: normal; /* Allow details to wrap */
+}
+.ice-image {
+  max-width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  border: 2px solid #00FFF7;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #FF00CC, 0 0 24px #00FFF744;
+  display: block;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  /* Adjust container padding and width for mobile */
+  .terminal-intro, .terminal-log, .black-ice, .exploits-list {
+    padding: 1.5rem 1rem;
+    margin: 1rem auto;
+    max-width: 90%;
+  }
+
+  .exploits-list {
+    max-width: 95%;
+  }
+
+  /* Stack navigation vertically */
+  .cyberpunk-nav {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* Adjust font sizes for readability */
+  h1.crt-green { font-size: 1.8em; }
+  h2.crt-green { font-size: 1.5em; }
+
+  /* Prevent typewriter from overflowing on small screens */
+  .typewriter {
+    white-space: pre-wrap; /* Allow text to wrap */
+    word-break: break-all;
+    border-right: none; /* Remove blinking caret on mobile */
+    animation: none; /* Disable typewriter animation on mobile for performance */
+  }
 }
