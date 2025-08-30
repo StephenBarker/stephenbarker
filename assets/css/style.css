@@ -57,9 +57,9 @@ main {
   text-shadow: 0 0 2px #39FF14, 0 0 10px #39FF14;
 }
 .glitch {
-  color: #FF00CC;
+  color: #00FFF7; /* Use high-contrast cyan as the base color */
   position: relative;
-  text-shadow: 1px 0 #00FFF7, -1px 0 #FF00CC;
+  text-shadow: 1px 0 #FF00CC, -1px 0 #00FFF7; /* Keep pink in the shadow for effect */
   animation: glitch 1s infinite linear alternate-reverse;
 }
 @keyframes glitch {
@@ -132,6 +132,7 @@ main {
 .legacy-entry,
 .legacy-entry-static {
   margin-bottom: 0.5em;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace; /* Preserve terminal font */
 }
 .legacy-entry-static {
   /* Style for non-expandable log entries */
@@ -141,6 +142,7 @@ main {
   cursor: pointer;
   outline: none;
   color: #00FFF7;
+  white-space: normal; /* Allow summary text to wrap on small screens */
   transition: color 0.2s;
 }
 .legacy-entry summary:hover {
@@ -195,5 +197,12 @@ main {
     word-break: break-all;
     border-right: none; /* Remove blinking caret on mobile */
     animation: none; /* Disable typewriter animation on mobile for performance */
+  }
+}
+
+/* --- Desktop-specific styles for cursor --- */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: crosshair;
   }
 }

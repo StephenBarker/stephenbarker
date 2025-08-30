@@ -33,7 +33,12 @@ Hackerman
   <link type="application/atom+xml" rel="alternate" href="{{ "/feed.xml" | relative_url }}" title="{{ site.title }}">
 
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Asynchronously load Google Fonts to prevent render-blocking -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap"></noscript>
 </head>
 
 <body>
