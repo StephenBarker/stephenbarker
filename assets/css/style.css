@@ -242,8 +242,14 @@ footer {
 
   /* Stack social handles vertically on mobile */
   .handle-list {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .handle-list a {
+    /* Force each link to take up the full width, causing it to wrap to a new line */
+    flex-basis: 100%;
+    text-align: center;
   }
 
   /* Adjust font sizes for readability */
