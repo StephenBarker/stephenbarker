@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Black ICE"
+description: "A commentary on corporate jargon and the nature of digital resistance, featuring an intercepted corp-speak transmission."
 ---
 
 <div class="black-ice">
