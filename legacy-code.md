@@ -3,7 +3,7 @@ layout: default
 title: "Legacy Code"
 ---
 
-<div class="terminal-log">
+<div class="terminal-log terminal-log--left-aligned">
   <h2 class="crt-green">Legacy Code</h2>
   <div class="legacy-entry-static">[1998] First contact: Pentium II. The addiction begins.</div>
   <details class="legacy-entry">

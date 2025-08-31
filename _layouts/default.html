@@ -14,7 +14,7 @@ Hackerman
 
     _   _   _   _   _   _   _   _   _
    / \ / \ / \ / \ / \ / \ / \ / \ / \
-  ( c | t | r | l | a | l | t | c | o )
+  ( C | t | r | l | A | l | t | C | o )
    \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/
    ( r | p | . | d | e | v | )
     \_/ \_/ \_/ \_/ \_/ \_/
@@ -57,6 +57,10 @@ Hackerman
     {{ content }}
   </main>
 
+  <footer>
+    <a href="#" id="toggle-cursor-effect" class="footer-link"></a>
+  </footer>
+
   <script>
     fetch('https://corporatebs-generator.sameerkumar.website/')
       .then(response => response.json())
@@ -68,7 +72,43 @@ Hackerman
         document.getElementById('tagline').textContent =
           'Press Ctrl+Alt on the system to install: [API unavailable]';
       });
+
+    // --- Cursor Effect Toggle Logic ---
+    function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
+    const cursorToggle = document.getElementById('toggle-cursor-effect');
+    const isCursorDisabled = getCookie('cursorEffectDisabled') === 'true';
+
+    if (window.matchMedia('(pointer: fine)').matches) { // Only run on devices with a mouse
+      if (isCursorDisabled) {
+        cursorToggle.textContent = '[Enable Cursor Effect]';
+      } else {
+        document.body.classList.add('cursor-effect-active');
+        cursorToggle.textContent = '[Disable Cursor Effect]';
+        
+        const script = document.createElement('script');
+        script.src = '{{ "/assets/js/rainbow-cursor.js" | relative_url }}';
+        document.body.appendChild(script);
+      }
+
+      cursorToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (isCursorDisabled) {
+          document.cookie = 'cursorEffectDisabled=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+        } else {
+          document.cookie = 'cursorEffectDisabled=true; path=/; max-age=31536000'; // 1 year
+        }
+        location.reload();
+      });
+    } else {
+      cursorToggle.style.display = 'none'; // Hide toggle on touch devices
+    }
   </script>
+
 </body>
 
 </html>

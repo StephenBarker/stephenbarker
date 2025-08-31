@@ -167,6 +167,21 @@ main {
   display: block;
 }
 
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+.footer-link {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+.footer-link:hover {
+  color: #00FFF7;
+  text-shadow: 0 0 5px #00FFF7;
+}
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
   /* Adjust container padding and width for mobile */
@@ -202,7 +217,8 @@ main {
 
 /* --- Desktop-specific styles for cursor --- */
 @media (hover: hover) and (pointer: fine) {
-  body {
-    cursor: crosshair;
+  /* Hide the default system cursor ONLY when the custom effect is active */
+  body.cursor-effect-active {
+    cursor: none;
   }
 }
