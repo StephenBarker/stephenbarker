@@ -58,6 +58,13 @@ Hackerman
   </main>
 
   <footer>
+    <a href="#" id="toggle-handles" class="footer-link" title="I need a handle man...<br>I mean, I don't have an identity until I have a handle">Echo Terminal 23</a>
+    <div id="handle-list" class="handle-list">
+      <!-- Replace "#" with your actual profile URLs -->
+      <a href="https://github.com/your-github-username" class="footer-link" target="_blank" rel="noopener noreferrer">[GitHub]</a>
+      <a href="https://www.linkedin.com/in/your-linkedin-profile/" class="footer-link" target="_blank" rel="noopener noreferrer">[LinkedIn]</a>
+      <a href="https://x.com/your-twitter-handle" class="footer-link" target="_blank" rel="noopener noreferrer">[X/Twitter]</a>
+    </div>
     <a href="#" id="toggle-cursor-effect" class="footer-link"></a>
   </footer>
 
@@ -72,6 +79,20 @@ Hackerman
         document.getElementById('tagline').textContent =
           'Press Ctrl+Alt on the system to install: [API unavailable]';
       });
+
+    // --- Handle/Social Links Toggle Logic ---
+    const handleToggle = document.getElementById('toggle-handles');
+    const handleList = document.getElementById('handle-list');
+
+    handleToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isVisible = handleList.classList.toggle('visible');
+      if (isVisible) {
+        handleToggle.textContent = '[Close Comms]';
+      } else {
+        handleToggle.textContent = 'Echo Terminal 23';
+      }
+    });
 
     // --- Cursor Effect Toggle Logic ---
     function getCookie(name) {
@@ -108,6 +129,8 @@ Hackerman
       cursorToggle.style.display = 'none'; // Hide toggle on touch devices
     }
   </script>
+  <!-- Custom tooltip script to override default title behavior -->
+  <script src="{{ "/assets/js/custom-tooltip.js" | relative_url }}"></script>
 
 </body>
 
