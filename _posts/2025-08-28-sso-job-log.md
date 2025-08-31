@@ -16,7 +16,7 @@ author: HotChip
   <p>So I split the payload at 16:15, generate 12 shards as <code>1615-identity-01.csv … 1615-identity-12.csv</code>. Extra archival file for my own records: <code>1615-identity.csv</code>.</p>
   <p>All good-until the devs drop their next surprise. Turns out the file index can’t end in a divisible by 10. My 10th shard? Ghosted from import. Now we code around the superstition and skip the tens.</p>
   <p>And that’s the state: fragile legacy infra, duct-taped compliance, Cold War iron. Still running. Still importing. Still winning.</p>
-  <p>Lesson: brittle legacy pipelines mean you’re not just fighting code, you’re fighting entropy. Split jobs early and plan for arbitrary constraints.<\p>
+  <p>Lesson: brittle legacy pipelines mean you’re not just fighting code, you’re fighting entropy. Split jobs early and plan for arbitrary constraints.</p>
   <p class="glitch" style="margin-top: 2rem;">Corporate. Deep state. Same circuit.</p>
   <p style="text-align: right; width: 100%; font-family: 'JetBrains Mono', 'Fira Code', monospace;">- HotChip</p>
 </div>
