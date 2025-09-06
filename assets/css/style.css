@@ -150,6 +150,9 @@ main {
   color: var(--color-cyan);
   font-size: 1.1em;
 }
+.mt-2 {
+  margin-top: 2rem;
+}
 .legacy-entry,
 .legacy-entry-static {
   margin-bottom: 0.5em;
