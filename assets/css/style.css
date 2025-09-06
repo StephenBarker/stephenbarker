@@ -70,6 +70,11 @@ main {
   font-family: var(--font-mono);
   text-shadow: 0 0 2px var(--color-green), 0 0 10px var(--color-green);
 }
+.crt-magenta {
+  color: var(--color-magenta);
+  font-family: var(--font-mono);
+  text-shadow: 0 0 2px var(--color-magenta), 0 0 10px var(--color-magenta);
+}
 .glitch {
   color: #00FFF7; /* Use high-contrast cyan as the base color */
   position: relative;

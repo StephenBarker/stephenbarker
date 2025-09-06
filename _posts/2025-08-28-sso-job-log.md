@@ -5,7 +5,7 @@ date: 2025-08-28 10:00:00 -0000
 author: HotChip
 ---
 
-<div class="terminal-log">
+<div class="terminal-log terminal-log--left-aligned">
   <h2 class="crt-green">{{ page.title }}</h2>
   <p>SSO-usually easy creds. Spin up the IdP, toss in some accounts, wire up a few groups, maybe sprinkle some SAML-done. Corporate credit secured.</p>
   <p>Not this cycle. Docs? Straight dog water. Get the accounts in, half the identity file crashes out with <code>&lt;&lt;can’t override local id&gt;&gt;</code>. Drop into the admin console, run some deep packet scrying, and find the real enemy: some ancient config lopping off the first two bytes of every ID. Can’t patch. Can’t override.</p>
@@ -17,6 +17,6 @@ author: HotChip
   <p>All good-until the devs drop their next surprise. Turns out the file index can’t end in a divisible by 10. My 10th shard? Ghosted from import. Now we code around the superstition and skip the tens.</p>
   <p>And that’s the state: fragile legacy infra, duct-taped compliance, Cold War iron. Still running. Still importing. Still winning.</p>
   <p>Lesson: brittle legacy pipelines mean you’re not just fighting code, you’re fighting entropy. Split jobs early and plan for arbitrary constraints.</p>
-  <p class="glitch" style="margin-top: 2rem;">Corporate. Deep state. Same circuit.</p>
-  <p style="text-align: right; width: 100%; font-family: 'JetBrains Mono', 'Fira Code', monospace;">- HotChip</p>
+  <p class="glitch mt-2">Corporate. Deep state. Same circuit.</p>
+  <p class="post-signature">- {{ page.author }}</p>
 </div>

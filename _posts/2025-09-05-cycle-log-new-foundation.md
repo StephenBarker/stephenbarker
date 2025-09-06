@@ -5,7 +5,7 @@ date: 2025-09-05 11:00:00 -0000
 author: HotChip
 ---
 
-<div class="terminal-log">
+<div class="terminal-log terminal-log--left-aligned">
   <h2 class="crt-green">{{ page.title }}</h2>
   <p>A thought. A whisper. An idea that I won't let go.</p>
   <p>My body stands on a possibility in the void: do I keep stacking the house of cards, juggling threads, patching holes-or do I tear it all down to the atoms of its DNA and build clean?</p>
@@ -22,6 +22,6 @@ author: HotChip
   <p>This isn't just about clean code. It's about building a better machine-one that serves the user, not the bureaucracy. One that I control.</p>
   <p>So I can finally kill the ritual of stitching five systems together just to get a single file out.</p>
   <p>A new foundation. A new cycle.</p>
-  <p class="glitch" style="margin-top: 2rem;">This is how you reboot the corp.</p>
-  <p style="text-align: right; width: 100%; font-family: 'JetBrains Mono', 'Fira Code', monospace;">- {{ page.author }}</p>
+  <p class="glitch mt-2">This is how you reboot the corp.</p>
+  <p class="post-signature">- {{ page.author }}</p>
 </div>
