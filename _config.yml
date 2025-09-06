@@ -22,3 +22,7 @@ nav:
     url: "/exploits.html"
   - title: "Black ICE"
     url: "/black-ice.html"
+
+# Sass/SCSS settings
+sass:
+  quiet_deps: true
