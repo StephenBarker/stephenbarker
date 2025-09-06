@@ -131,6 +131,13 @@ Hackerman
   <!-- Custom tooltip script to override default title behavior -->
   <script src="{{ "/assets/js/custom-tooltip.js" | relative_url }}"></script>
 
+  {% if jekyll.environment == 'production' %}
+  <!-- Analytics Snippet privacy-focused provider -->
+  <!-- 1. Sign up for a service like Plausible or Fathom. -->
+  <!-- 2. Replace the line below with the script they provide. -->
+  <!-- <script defer data-domain="ctrlaltcorp.dev" src="https://plausible.io/js/script.js"></script> -->
+  {% endif %}
+
 </body>
 
 </html>
