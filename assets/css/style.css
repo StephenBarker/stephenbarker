@@ -192,6 +192,20 @@ main {
   display: block;
 }
 
+.video-container {
+  align-self: center; /* Center this container within its flex parent */
+  width: 100%;
+  max-width: 560px; /* A standard 16:9 video width limit */
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--color-cyan);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 0 12px var(--color-magenta), 0 0 24px #00FFF744;
+}
+
 /* --- Footer --- */
 footer {
   text-align: center;
