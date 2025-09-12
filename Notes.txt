@@ -1,0 +1,2 @@
+Get all the data
+bundle exec jekyll serve --livereload --future --verbose
