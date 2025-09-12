@@ -48,7 +48,9 @@ Hackerman
         {% endfor %}
       </nav>
     </div>
-    <marquee id="tagline" class="tagline glitch"></marquee>
+    <div class="marquee-container">
+      <p id="tagline" class="tagline-content"></p>
+    </div>
   </header>
 
   <main>
@@ -71,11 +73,11 @@ Hackerman
     fetch('https://corporatebs-generator.sameerkumar.website/')
       .then(response => response.json())
       .then(data => {
-        document.getElementById('tagline').textContent =
+        document.getElementById('tagline').innerText =
           `Press Ctrl+Alt on the system to install: ${data.phrase}`;
       })
       .catch(() => {
-        document.getElementById('tagline').textContent =
+        document.getElementById('tagline').innerText =
           'Press Ctrl+Alt on the system to install: [API unavailable]';
       });
 
