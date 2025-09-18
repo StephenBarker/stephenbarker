@@ -164,6 +164,10 @@ main {
 .mt-2 {
   margin-top: 2rem;
 }
+pre code.language-javascript {
+  color: var(--color-green);
+  text-shadow: 0 0 2px var(--color-magenta);
+}
 .legacy-entry,
 .legacy-entry-static {
   margin-bottom: 0.5em;
