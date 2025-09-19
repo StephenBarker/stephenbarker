@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Cycle Log: A New Foundation"
+title: "Cycle Log // A New Foundation"
 date: 2025-09-05 11:00:00 -0000
 author: HotChip
 ---

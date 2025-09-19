@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "SSO Job Log – Transmission 1615/CorpNet"
+title: "SSO Job Log // Transmission 1615/CorpNet"
 date: 2025-08-28 10:00:00 -0000
 author: HotChip
 ---

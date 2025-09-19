@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Orange Theory Hack: Username Rewrite"
+title: "Orange Theory Hack // USERNAME-REWRITE"
 date: 2025-09-26 11:00:00 -0000
 author: HotChip
 ---

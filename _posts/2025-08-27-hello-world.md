@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Hello World: System Entry Point"
+title: "Hello World // System Entry Point"
 date: 2025-08-27 20:00:00 -0000
 author: HotChip
 ---
