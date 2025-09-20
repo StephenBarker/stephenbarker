@@ -16,6 +16,8 @@ include:
 nav:
   - title: "Boot Sequence"
     url: "/"
+  - title: "Archive"
+    url: "/archive/"
   - title: "Legacy Code"
     url: "/legacy-code.html"
   - title: "Exploits"

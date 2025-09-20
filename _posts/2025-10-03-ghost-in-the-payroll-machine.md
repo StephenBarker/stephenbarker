@@ -44,10 +44,8 @@ author: HotChip
     <pre class="glitch"> &gt;&gt; "Not sensitive." &gt;&gt; "Can’t reproduce." </pre>
     <p>I kept pushing. Escalated internally. Eventually the right people looked and confirmed it was a P1. Persistence
         turned “unproven” into the severity it deserved.</p>
-
     <img src="/assets/img/P1 bug.jpg" alt="Confirmation screenshot showing P1 status" title="P1 confirmation"
         class="img-fluid my-2" style="width: inherit;">
-
     <p class="mt-1"><strong>Short scoreboard:</strong></p>
     <pre
         class="glitch mt-1"> &gt;&gt; STATUS: <span class="crt-magenta">PATCHED</span> &gt;&gt; IMPACT: P1 | AUTH: NONE | TRIAGE: FAILED | CORP: FAST </pre>
@@ -71,4 +69,5 @@ author: HotChip
         reported it.</p>
     <pre class="glitch mt-2"> &gt;&gt; END OF TRANSMISSION </pre>
     <p class="post-signature">- {{ page.author }}</p>
+
 </div>
