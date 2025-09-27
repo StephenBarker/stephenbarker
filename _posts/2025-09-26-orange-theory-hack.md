@@ -17,7 +17,7 @@ author: HotChip
   <p class="glitch crt-magenta">"feature" nobody asked for.</p>
   <p>I cracked open the Orange Theory API back in 2022 and found a forgotten lane of code: staff-only username updates. Normally it’s locked to in-studio terminals, left the door wide open. Why can users update their username?</p>
   <p>I made this code to append class counts automatically-someone once ran nightly Google Scripts against it. Me, it was me. </p>
-  <p>I asked if this was a bug. Corp said: “Not a bug, a feature.”</p>
+  <p>I asked if this was a bug. The Corp® said: “Not a bug, a feature.”</p>
   <p>So I wrote my own client that would:</p>
   <ul>
     <li>Auth with Cognito.</li>
@@ -61,7 +61,7 @@ function setUsernameWithClassCount() {
 }
   </code></pre>
 
-  <p>It still works. Corp left it live. You can view the full script on <a href="https://github.com/StephenBarker/OTFNameAndClassCount" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+  <p>It still works. The Corp® left it live. You can view the full script on <a href="https://github.com/StephenBarker/OTFNameAndClassCount" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
   <p>Call it a bug, a feature, or just legacy code nobody wanted to kill.</p>
   <pre class="glitch mt-2">
 &gt;&gt; END OF TRANSMISSION

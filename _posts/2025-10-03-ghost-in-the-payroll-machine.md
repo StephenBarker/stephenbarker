@@ -20,7 +20,7 @@ author: HotChip
     </ul>
     <p>Both were meant to be locked down. Both were not.</p>
     <h3 class="crt-green mt-2">The Vulnerability</h3>
-    <p>On the public side, anyone could enumerate and destroy documents - W2s, invoices, payroll packets - one SOAP call
+    <p>On the public side, anyone could enumerate and destroy documents  W2s, invoices, payroll packets - one SOAP call
         away from vanishing. On the internal side, any network user (vendors, temps, guest Wi-Fi) could pull full PDFs
         like tax forms and fingerprint records. No authentication anywhere.</p>
     <p>In short:</p>
@@ -48,9 +48,9 @@ author: HotChip
         class="img-fluid my-2" style="width: inherit;">
     <p class="mt-1"><strong>Short scoreboard:</strong></p>
     <pre
-        class="glitch mt-1"> &gt;&gt; STATUS: <span class="crt-magenta">PATCHED</span> &gt;&gt; IMPACT: P1 | AUTH: NONE | TRIAGE: FAILED | CORP: FAST </pre>
-    <h3 class="crt-green mt-2">The Corp’s Response</h3>
-    <p>Credit where it’s due - the Corp moved quickly once its engineers verified the issue. They blocked anonymous
+        class="glitch mt-1"> &gt;&gt; STATUS: <span class="crt-magenta">PATCHED</span> &gt;&gt; IMPACT: P1 | AUTH: NONE | TRIAGE: FAILED | CORP®: FAST </pre>
+    <h3 class="crt-green mt-2">The Corp’s® Response</h3>
+    <p>Credit where it’s due - the Corp® moved quickly once its engineers verified the issue. They blocked anonymous
         service calls at the service layer and queued deeper fixes for the next release. No theatrical delays: patch,
         test, deploy.</p>
     <h3 class="crt-green mt-2">Lessons Learned</h3>
@@ -65,7 +65,7 @@ author: HotChip
     </ul>
     <h3 class="crt-green mt-2">Final Thoughts</h3>
     <p>This wasn’t an edge case. It was the ability to wipe or steal payroll history across entire organizations. In a
-        world where trust is currency, that’s catastrophic. The Corp got lucky this time - someone else might not have
+        world where trust is currency, that’s catastrophic. The Corp® got lucky this time - someone else might not have
         reported it.</p>
     <pre class="glitch mt-2"> &gt;&gt; END OF TRANSMISSION </pre>
     <p class="post-signature">- {{ page.author }}</p>

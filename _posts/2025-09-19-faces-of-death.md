@@ -25,7 +25,7 @@ author: HotChip
 
   <p class="mt-2">I’ve seen the decay: Faded bumper stickers where years blur into static. Sun-wrinkled inkjet memorials, writhing into oil stains on paper. Phone screenshots. Scanned negatives with bad filters.</p>
   <p>Why filters? Why distort the raw? Sometimes I just wish people shot truth, no masks, no edits.</p>
-  <p>Yesterday I walked the beach. Stared out at nothing. Unplugged. Breathed. But cycles don’t stop. Code won’t write itself. Corp demands continue.</p>
+  <p>Yesterday I walked the beach. Stared out at nothing. Unplugged. Breathed. But cycles don’t stop. Code won’t write itself. Corp® demands continue.</p>
   <p>Maybe one day an AI will read these logs in my voice, answer the question I keep circling: What’s next?</p>
 
   <p class="crt-green mt-2">&gt;&gt; END OF TRANSMISSION<br>&gt;&gt; STATUS: <span class="crt-magenta">CONTEMPLATIVE</span></p>

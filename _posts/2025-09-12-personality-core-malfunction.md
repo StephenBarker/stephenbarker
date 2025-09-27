@@ -27,14 +27,14 @@ author: HotChip
     <li>Sandbox locked, guarded by screams.</li>
     <li class="glitch crt-magenta">WARNING: DOES NOT PLAY WELL WITH OTHERS.</li>
   </ul>
-  <p>Legacy artist calcified into fossil. Management directive: “VBS is deprecated—migrate to C#.” Response: MORE VBS. Debt climbs. Corp sinks deeper into legacy quicksand.</p>
+  <p>Legacy artist calcified into fossil. Management directive: “VBS is deprecated—migrate to C#.” Response: MORE VBS. Debt climbs. The Corp® sinks deeper into legacy quicksand.</p>
 
   <h3 class="crt-green mt-2">&gt;&gt; ERROR LOG 0x03: WALL OF NO</h3>
   <p>“Can you fix the workflow to update records?” → NO.<br>“Add data validation to stop null refs?” → NO.<br>“Migrate stack from 1990s → 2010?” → NO.</p>
   <p>Not “can’t.” Won’t. Refusal to evolve. Dead weight sanctified.</p>
 
   <h3 class="crt-green mt-2">&gt;&gt; ERROR LOG 0x04: SYSTEM INSTABILITY</h3>
-  <p>Job paradox: Fun work. Meaningful code. Toxic variable. Management refuses deletion. Corp won’t fire. Runtime drifts toward crash.</p>
+  <p>Job paradox: Fun work. Meaningful code. Toxic variable. Management refuses deletion. The Corp® won’t fire. Runtime drifts toward crash.</p>
 
   <p class="crt-green mt-2">&gt;&gt; END OF TRANSMISSION<br>&gt;&gt; STATUS: <span class="glitch crt-magenta">UNRESOLVED</span></p>
 

@@ -41,7 +41,7 @@ title: "Legacy Code"
   <details class="legacy-entry">
     <summary>[PRESENT] On the inside. Hunting for P1s/P2s.</summary>
     <div class="entry-details">
-      &gt; Sifting through corporate boilerplate, searching for exploitable logic. Day-job cover: Forcing communication between siloed data streams to 'enhance synergy'.<br>
+      &gt; Sifting through Corp®rate boilerplate, searching for exploitable logic. Day-job cover: Forcing communication between siloed data streams to 'enhance synergy'.<br>
       &gt; Major log entries will be sparse; tactical updates are now pushed to the Exploits channel.
     </div>
   </details>

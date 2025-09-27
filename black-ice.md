@@ -7,11 +7,11 @@ description: "A commentary on corporate jargon and the nature of digital resista
 <div class="black-ice">
   <h2 class="crt-green">Black ICE</h2>
   <div class="rant glitch">
-    Press Ctrl+Alt on the system — reboot the corp.<br>
+    Press Ctrl+Alt on the system — reboot The Corp®.<br>
   </div>
   <img src="{{ '/assets/img/AQPYpjftWxpl8m1jJO6AQgClnFhzBUSjpdzLaOtdFAbwyQyy73B7jCHLTSdVwYHs3etKdChh6u15p4MwoOwdg8yI_8R0YBgHleCVBT85pEPEI3f1IHpAvHhAylTd7UXw.webp' | relative_url }}" alt="Uncle Sam as a hacker, wearing a hoodie and sunglasses." title="Uncle Sam as a hacker, wearing a hoodie and sunglasses." class="ice-image">
   <div class="jargon-container">
-    <span class="crt-green">Intercepted Corp-Speak Transmission:</span>
+    <span class="crt-green">Intercepted The Corp® Speak Transmission:</span>
     <pre id="jargon-output">Fetching...</pre>
   </div>
   <script>
