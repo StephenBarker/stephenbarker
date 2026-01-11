@@ -95,13 +95,19 @@ main {
   border: 2px solid var(--color-magenta);
   padding: 2rem;
   margin: 2rem auto;
-  max-width: 700px;
+  max-width: 80%;
   box-shadow: 0 0 40px #FF00CC44;
   border-radius: var(--border-radius-lg);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Ensure images stay within container bounds */
+.terminal-log img, .black-ice img, .exploits-list img, .img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .terminal-log--left-aligned {
