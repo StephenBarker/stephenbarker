@@ -214,6 +214,5 @@ tags: [corporate, career, data, cyberpunk, silence]
 <p>After all these years, all the systems, all the Corp® nonsense, all the technical debt and political debt and actual debt...</p>
 
 <p class="glitch">I think I'm ready for the next build.</p>
-```
 
 </div>
