@@ -5,7 +5,7 @@ date: 2026-08-23 09:00:00 -0400
 author: HotChip
 excerpt: "Sometimes you defrag the drive. Sometimes you wipe the OS. Sometimes you just need a new machine."
 tags: [corporate, career, data, cyberpunk, silence]
----------------------------------------------------
+---
 
 <div class="terminal-log terminal-log--left-aligned">
     <h2 class="crt-green">{{ page.title }}</h2>
@@ -13,7 +13,7 @@ tags: [corporate, career, data, cyberpunk, silence]
     <p class="crt-green">&gt;&gt; AUTHOR: {{ page.author | upcase }}</p>
     <p class="crt-green">&gt;&gt; TIME: [{{ page.date | date: "%Y%m%d-%H%M" }}]</p>
 
-```
+
 <p class="mt-2">Sometimes you can defrag a drive and get it back online.</p>
 
 <p>Other times you have to wipe the OS.</p>
