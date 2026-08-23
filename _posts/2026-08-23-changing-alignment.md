@@ -14,7 +14,7 @@ tags: [corporate, career, data, cyberpunk, silence]
     <p class="crt-green">&gt;&gt; TIME: [{{ page.date | date: "%Y%m%d-%H%M" }}]</p>
 
 
-<p class="mt-2">Sometimes you can defrag a drive and get it back online.</p>
+<h3 class="crt-green mt-2">Sometimes you can defrag a drive and get it back online.</h3>
 
 <p>Other times you have to wipe the OS.</p>
 
@@ -47,13 +47,11 @@ tags: [corporate, career, data, cyberpunk, silence]
 <p>I feel ready.</p>
 
 <pre class="glitch mt-2">&gt;&gt; STATUS: OLD BUILD STABLE
-```
 
 >> USER: HOTCHIP
 >> NEW DEPLOYMENT: PENDING
 >> CONFIDENCE: UNEXPECTEDLY HIGH</pre>
 
-```
 <p>I've spent the last couple of weeks documenting the old systems and working with the new guy.</p>
 
 <p>The processes are written down.</p>
@@ -126,12 +124,11 @@ tags: [corporate, career, data, cyberpunk, silence]
 
 <p>That's usually Corp® code for:</p>
 
-<pre class="glitch mt-2">&gt;&gt; WARNING
-```
+<h3 class="crt-green mt-2"> &gt;&gt; WARNING</h3>
+<pre class="glitch mt-2">
 
 >> SOMEONE WILL YELL AT YOU</pre>
 
-```
 <p>Fine.</p>
 
 <p>I've met users.</p>
@@ -202,22 +199,21 @@ tags: [corporate, career, data, cyberpunk, silence]
 
 <p>I'm looking at it wondering what I can build once I'm inside.</p>
 
-<pre class="glitch mt-2"> &gt;&gt; NEW NODE DETECTED
-```
+<h3 class="crt-green mt-2"> &gt;&gt; NEW NODE DETECTED<h3>
+<pre class="glitch mt-2">
 
 >> AUTHENTICATION: ACCEPTED
 >> DATA STREAM: OPEN
 >> HOTCHIP: ONLINE
 >> LET'S SEE WHAT'S IN THE LAKE </pre>
 
-```
-<p class="mt-2">I'm excited.</p>
+<p class="glitch mt-2">I'm excited.</p>
 
 <p>That's probably the strangest part.</p>
 
 <p>After all these years, all the systems, all the Corp® nonsense, all the technical debt and political debt and actual debt...</p>
 
-<p>I think I'm ready for the next build.</p>
+<p class="glitch">I think I'm ready for the next build.</p>
 ```
 
 </div>
